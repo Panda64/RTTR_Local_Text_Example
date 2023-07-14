@@ -11,6 +11,7 @@ test("example test 1", async () => {
     </group>
   );
 
+  // Logging box mesh to verify RTTR functionality
   console.log(renderer.scene.instance.children[0].children);
 
   // Dummy Expect
@@ -24,7 +25,9 @@ test("example test 2", async () => {
       <Text name="text_test"> Testing </Text>
     </group>
   );
-
+  
+  // Logging scene children
+  // Expect to see Text object, but no children are present
   console.log(renderer.scene.instance.children);
 
   // Dummy Expect
@@ -36,6 +39,8 @@ test("example test 3", async () => {
     <Text name="text_test"> Testing </Text>
   );
 
+  // Logging scene children
+  // Expect to see Text object, but no children are present
   console.log(renderer.scene.instance.children);
 
   // Dummy Expect
